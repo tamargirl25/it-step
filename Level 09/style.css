@@ -1,0 +1,96 @@
+body {
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    background-color: hsl(214, 17%, 92%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 2rem;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: 
+    "daniel daniel jonathan kira"
+    "jeanette patrick patrick kira";
+    gap: 1.5rem;
+    max-width: 1100px;
+    width: 110%;
+}
+
+.card {
+    border-radius: 10px;
+    padding: 2rem;
+    color: white;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.card header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.card header img {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin-right: 1rem;
+    border: 2px solid rgba(255,255,255,0.4);
+}
+
+.card header div h3 {
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.card header div p {
+    font-size: 0.8rem;
+    opacity: 0.7;
+}
+
+.card h4 {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    line-height: 1.4;
+}
+
+.card p {
+    font-size: 0.9rem;
+    opacity: 0.9;
+    line-height: 1.5;
+}
+
+.violet {
+    background-color: hsl(263, 55%, 52%);
+    grid-area: daniel;
+}
+
+.grayish-blue {
+    background-color: hsl(217, 19%, 35%);
+    grid-area: jonathan;
+}
+
+.blackish-blue {
+    background-color: hsl(219, 29%, 14%);
+    grid-area: patrick;
+}
+
+.white1 {
+    grid-area: jeanette;
+}
+
+.white2 {
+    grid-area: kira;
+}
+
+.attribution {
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 11px;
+}
+
+.attrinution a {
+    color: hsl(228, 45%, 44%);
+}
